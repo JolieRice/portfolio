@@ -2,14 +2,58 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Hello, world!</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="icon" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Interactive Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <script src="app.js"></script>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h1>About Me</h1>
+      <p>
+        Welcome to my interactive portfolio! I am a passionate graphic designer
+        and creative.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h1>My Projects</h1>
+      <div class="project-gallery">
+        <div class="project-card" data-project="project1">
+          <img src="project1.jpg" alt="Project 1" />
+          <h2>Project 1</h2>
+        </div>
+        <div class="project-card" data-project="project2">
+          <img src="project2.jpg" alt="Project 2" />
+          <h2>Project 2</h2>
+        </div>
+        <!-- Add more projects here -->
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1>Contact</h1>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
   </body>
 </html>
