@@ -1,27 +1,26 @@
-// Project card interactivity
-const projectCards = document.querySelectorAll(".project-card");
+// script.js
 
-projectCards.forEach((card) => {
-  card.addEventListener("click", () => {
-    alert(`You clicked on ${card.dataset.project}`);
-    // You can add more interactivity, like opening a modal with project details.
+document.addEventListener("DOMContentLoaded", () => {
+  const patternSection = document.querySelector(".patterned");
+
+  // Subtle hover effect
+  patternSection.addEventListener("mouseenter", () => {
+    patternSection.style.opacity = "0.8";
   });
-});
 
-// Contact form submission
-const contactForm = document.getElementById("contactForm");
+  patternSection.addEventListener("mouseleave", () => {
+    patternSection.style.opacity = "1";
+  });
 
-contactForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
-
-  if (name && email && message) {
-    alert("Thank you for your message!");
-    // Here, you can add AJAX or other logic to send the form data to a server.
-  } else {
-    alert("Please fill in all fields.");
-  }
+  // Floating effect for header
+  const header = document.querySelector("header");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      header.style.transform = "translateY(-10px)";
+      header.style.opacity = "0.9";
+    } else {
+      header.style.transform = "translateY(0)";
+      header.style.opacity = "1";
+    }
+  });
 });
