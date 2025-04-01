@@ -19,19 +19,19 @@ body {
 
 .image-container {
   position: absolute;
-  top: 50%;
+  top: 28%;
   width: 20%;
   max-width: 700px;
   animation: floatAnimation 6s infinite ease-in-out;
 }
 
 .image-left {
-  left: 8%;
+  left: 5%;
 }
 
 .image-right {
   right: 10%;
-  top: 70%;
+  top: 80%;
 }
 
 .image-container img {
