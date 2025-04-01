@@ -77,9 +77,9 @@ nav a {
   background-size: cover; /* Ensures the image covers the entire section */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
-  min-height: 90vh; /* Makes the section take up at least the full viewport height */
+  min-height: 80vh;
   max-width: 100vw; /* Makes the section take up at least the full viewport height */
-
+  padding: 20px;
   display: flex; /* Centers the content vertically */
   flex-direction: column; /* Aligns content vertically */
   justify-content: center; /* Centers content vertically */
@@ -121,7 +121,6 @@ footer {
   .intro {
     margin-top: 50px; /* Increases the top margin for smaller screens */
     background-size: cover; /* Ensures the image covers the entire section */
-    min-height: 90vh; /* Makes the section take up at least the full viewport height */
     max-width: 100vw; /* Makes the section take up at least the full viewport height */
   }
 
@@ -153,6 +152,11 @@ footer {
 
   .subtext {
     font-size: 14px;
+  }
+  .intro {
+    margin-top: 50px; /* Increases the top margin for smaller screens */
+    background-size: cover; /* Ensures the image covers the entire section */
+    max-width: 100vw; /* Makes the section take up at least the full viewport height */
   }
 }
 
