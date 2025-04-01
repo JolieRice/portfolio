@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Jolie's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -20,7 +20,7 @@
 
     <main>
       <section class="intro">
-        <h1>MY PORTFOLIO</h1>
+        <h1>JOLIE'S PORTFOLIO</h1>
         <p class="subtext">
           A delicate collection of design, inspired by simplicity and nature.
         </p>
@@ -38,8 +38,79 @@
       <div class="image-container image-left">
         <img src="flower2.PNG" alt="left Decorative Image" />
       </div>
+      <main>
+        <h1>MY WORK</h1>
+        <section class="work-grid">
+          <div
+            class="work-item"
+            data-title="Project 1"
+            data-description="The Shell Project is an in-depth exploration of the coastal ecosystem and the vital role shells play within it. It begins with the Shell Map, a visual mind map shaped like a seashell,  guiding my research path. The Shell Guide serves as a brand guide, defining the project’s identity through color, typography, texture, imagery, and materials. Expanding on the tactile experience, I created a large papier-mâché hermit crab shell paired with a hand-sewn felt hermit crab that can emerge from its shell, revealing a string of poems. Additionally, a collection of handmade paper shells, made with watercolor and colored pencil, contain embedded facts about their real-life counterparts. Through research, storytelling, and hands-on craftsmanship, this project highlights the intricate connections between shells, marine life, and environmental sustainability."
+            data-images="work/pics/shells.jpg"
+          >
+            <h2>1</h2>
+            <img src="work/pics/shells.jpg" alt="Project 1" />
+            <p>Description of project 1.</p>
+          </div>
+          <div
+            class="work-item"
+            data-title="Project 2"
+            data-description="The Shell Project is an in-depth exploration of the coastal ecosystem and the vital role shells play within it. It begins with the Shell Map, a visual mind map shaped like a seashell,  guiding my research path. The Shell Guide serves as a brand guide, defining the project’s identity through color, typography, texture, imagery, and materials. Expanding on the tactile experience, I created a large papier-mâché hermit crab shell paired with a hand-sewn felt hermit crab that can emerge from its shell, revealing a string of poems. Additionally, a collection of handmade paper shells, made with watercolor and colored pencil, contain embedded facts about their real-life counterparts. Through research, storytelling, and hands-on craftsmanship, this project highlights the intricate connections between shells, marine life, and environmental sustainability."
+            data-images="work/pics/crab.jpg"
+          >
+            <h2>2</h2>
+            <img src="work/pics/crab.jpg" alt="Project 2" />
+            <p>Description of project 2.</p>
+          </div>
+          <div
+            class="work-item"
+            data-title="Trash Book"
+            data-description="This project explores the intersection of sustainability and design through a conceptual promotional package for a faux plant brand. The collection is entirely crafted from recycled materials, emphasizing themes of waste, consumption, and the future of sustainability. Included in the package are a plant product catalog, a material sample book showcasing repurposed textures, a free mini plant figurine sample, and a barcode collector’s book, a playful critique of consumer culture. By integrating bold visuals, tactile elements, and a narrative-driven approach, this project challenges the perception of artificiality in both plants and product marketing."
+            data-images="work/pics/box.jpg"
+          >
+            <h2>3</h2>
+            <img src="work/pics/box.jpg" alt="Project 3" />
+            <p>Description of project 3.</p>
+          </div>
+          <div
+            class="work-item"
+            data-title="Shell Guide"
+            data-description="The Shell Project is an in-depth exploration of the coastal ecosystem and the vital role shells play within it. It begins with the Shell Map, a visual mind map shaped like a seashell,  guiding my research path. The Shell Guide serves as a brand guide, defining the project’s identity through color, typography, texture, imagery, and materials. Expanding on the tactile experience, I created a large papier-mâché hermit crab shell paired with a hand-sewn felt hermit crab that can emerge from its shell, revealing a string of poems. Additionally, a collection of handmade paper shells, made with watercolor and colored pencil, contain embedded facts about their real-life counterparts. Through research, storytelling, and hands-on craftsmanship, this project highlights the intricate connections between shells, marine life, and environmental sustainability."
+            data-images="work/pics/wave.jpg,work/pics/box.jpg"
+          >
+            <h2>4</h2>
+            <img src="work/pics/wave.jpg" alt="Project 4" />
+            <p>Description of project 4.</p>
+          </div>
+          <div
+            class="work-item"
+            data-title="Little Scratch"
+            data-description="Created during the GDES Study Abroad trip in 2024, Little Scratch is a project consisting of three zines centered around the graffiti culture in Italy. By collecting photos of graffiti from Florence and pairing them with images of ornate frames sourced from museums and antique collectors, the zines juxtapose modern urban expression with traditional art preservation. The exhibition audience became collaborators, invited to draw and add to the zines with markers and pens, creating an interactive exploration of art and culture. Through this project, I gained insight into the history and preservation of Italian art while experimenting with community guided creative processes."
+            data-images="work/pics/wave.jpg, work/pics/box.jpg"
+          >
+            <h2>5</h2>
+            <img src="work/pics/zine.jpg" alt="Project 5" />
+            <p>
+              Little Scratch is a project consisting of three zines centered
+              around the graffiti culture in Italy.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <span class="modal-close">&times;</span>
+          <h2 id="modal-title"></h2>
+          <div id="modal-images" class="modal-images">
+            <img class="modal-image" src="" alt="Project Image 1" />
+            <img class="modal-image" src="" alt="Project Image 2" />
+            <!-- More images can go here -->
+          </div>
+          <p id="modal-description"></p>
+        </div>
+      </div>
       <footer>
-        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        <p>&copy; 2025 Portfolio. Jolie Rice</p>
       </footer>
     </main>
     <script src="script.js"></script>

@@ -9,6 +9,7 @@ body {
 }
 
 nav {
+  background: #f0e9da;
   border-bottom: 2px solid black;
   padding-bottom: 10px;
 }
@@ -44,7 +45,7 @@ div h2 {
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 30px 10px;
-  line-height: 1.2; /* Adjust line-height for better spacing */
+  line-height: 50px;
 }
 
 .work-grid {
@@ -93,12 +94,13 @@ footer {
 }
 
 .modal-content {
-  background-color: #f5f0e6;
-  padding: 20px;
-  border-radius: 10px;
+  background-color: #f5f0e6ec;
+  padding: 5%;
   width: 90%; /* Increased width */
   max-width: 1200px; /* Optional: Set a maximum width if needed */
   text-align: center;
+  font-size: 20px;
+  line-height: 30px;
   position: relative;
   overflow-y: auto;
   max-height: 80vh;
@@ -124,6 +126,10 @@ footer {
   .modal-images {
     flex-direction: column; /* Stack images vertically */
     align-items: center; /* Center images */
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
   }
 }
 
